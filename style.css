@@ -81,7 +81,6 @@ mark {
     grid-column-start: 2;
     grid-row-start: 5;
 
-
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 1rem;
@@ -93,16 +92,8 @@ mark {
     margin-bottom: 48px;
 }
 
-
-
 #social-section {
     word-spacing: 24px;
-}
-
-#email a:link {
-    color: pink;
-
-    font-weight: 300;
 }
 
 /* unvisited link */
