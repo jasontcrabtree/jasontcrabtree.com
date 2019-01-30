@@ -1,117 +1,149 @@
 #background-grid {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: minmax(8px, 64px) minmax(auto, 1080px) minmax(16px, 64px);
-    grid-template-rows: 2.4rem auto auto auto auto;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: minmax(0%, 25%) minmax(auto, 46rem) minmax(0%, 25%);
+  grid-template-rows: auto auto auto auto auto;
 }
 
-/*#column-1-style {
-    grid-column: -2 / -1;
-    grid-row: 1 / -1;
-    background-image: linear-gradient(180deg, #f6d365 0%, #fda085 100%);
-}*/
+/* NAVIGATION BAR */
 
 #header-section {
-    grid-column-start: 2;
+  grid-column-start: 2;
+  grid-row-start: 1;
 
-    grid-row-start: 1;
+  line-height: 280%;
 
-    word-spacing: 24px;
-    margin-top: 2.4rem;
+  margin-top: 1.2rem;
 
-    font-family: 'Lato', sans-serif;
-    font-size: 1.15rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.15rem;
 
-    border: #232323;
+  border: #232323;
 
+  width: 100%;
 }
 
-
-
-#title {
-    grid-column-start: 2;
-    grid-row-start: 2;
-
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    font-size: 3.85rem;
-    line-height: 125%;
-
-
-
-    color: #232323;
-}
-
-#intro-sentence {
-    grid-column-start: 2;
-    grid-row-start: 3;
-
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 170%;
-
-    color: #232323;
-
-    margin-top: -8px;
-}
-
-mark {
-    background-image: linear-gradient(180deg, #ffff00 92%, #fda085 8%);
-    color: 232323;
-}
-
-#intro-paragraph {
-    grid-column-start: 2;
-    grid-row-start: 4;
-
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    font-size: 1.30rem;
-    line-height: 170%;
-
-    color: #232323;
-}
-
-#footer {
-    grid-column-start: 2;
-    grid-row-start: 5;
-
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 160%;
-
-    color: #232323;
-
-    margin-top: 16px;
-    margin-bottom: 48px;
-}
-
-#social-section {
-    word-spacing: 24px;
+a {
+  padding-right: 42px;
 }
 
 /* unvisited link */
 a:link {
-    color: #6357FF;
-    text-decoration: none;
-    font-weight: bold;
+  color: #6357ff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* visited link */
 a:visited {
-    color: #6357FF;
-    text-decoration: none;
+  color: #6357ff;
+  text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
-    color: #fda085;
-
+  color: #fda085;
 }
 
 /* selected link */
 a:active {
-    color: blue;
+  color: blue;
+}
+
+svg {
+  /* Place the icon on the text baseline. */
+  position: relative;
+  top: 0.125em;
+
+  /* Prevent the icon from shrinking inside a flex container. */
+  flex-shrink: 0;
+
+  /* Scale the icon to match the font-size. */
+
+  width: 1em;
+
+  /* Let the icon take whatever color the parent has. */
+  fill: currentColor;
+
+  /*
+     * If the icon is used on a link, which has a color transition,
+     * we can also transition the fill.
+    */
+  transition: fill 0.3s;
+}
+
+/* H1 TITLE */
+
+#title {
+  grid-column-start: 2;
+  grid-row-start: 2;
+
+  margin-top: 3%;
+  margin-bottom: 5%;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 3.85rem;
+  line-height: 125%;
+
+  color: #232323;
+}
+
+/* SUBTITLE */
+
+#intro-sentence {
+  grid-column-start: 2;
+  grid-row-start: 3;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 170%;
+
+  color: #232323;
+
+  margin-top: -8px;
+
+  width: 100%;
+}
+
+/* Text highlight colour */
+mark {
+  background-image: linear-gradient(180deg, #ffff00 92%, #fda085 8%);
+  color: 232323;
+}
+
+#bio-paragraph {
+  grid-column-start: 2;
+  grid-row-start: 4;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 170%;
+
+  color: #232323;
+
+  width: 100%;
+}
+
+/* Footer / Social */
+
+#footer {
+  grid-column-start: 2;
+  grid-row-start: 5;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+
+  color: #232323;
+
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+
+#social-section {
+  word-spacing: 24px;
 }
