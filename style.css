@@ -1,8 +1,37 @@
-#background-grid {
+.background-grid {
   display: grid;
-  grid-gap: 16px;
-  grid-template-columns: minmax(0%, 25%) minmax(auto, 46rem) minmax(0%, 25%);
+  grid-gap: 8px;
+  grid-template-columns: auto minmax(280px, 44rem) auto;
   grid-template-rows: auto auto auto auto auto;
+}
+
+.svg {
+  width: 2em;
+  height: 2em;
+}
+
+.socialIcons {
+  /* Place the icon on the text baseline. */
+  position: relative;
+  top: 0.125em;
+  margin-right: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+
+  /* Prevent the icon from shrinking inside a flex container. */
+  flex-shrink: 0;
+
+  /* Scale the icon to match the font-size. */
+  width: 2.5em;
+
+  /* Let the icon take whatever color the parent has. */
+  fill: currentColor;
+
+  /*
+     * If the icon is used on a link, which has a color transition,
+     * we can also transition the fill.
+    */
+  transition: fill 0.3s;
 }
 
 /* NAVIGATION BAR */
@@ -16,82 +45,76 @@
   margin-top: 1.2rem;
 
   font-family: "Lato", sans-serif;
-  font-size: 1.15rem;
+  font-size: 1.15em;
 
   border: #232323;
 
   width: 100%;
 }
 
-a {
-  padding-right: 42px;
+/* Navigation link padding */
+a.nav-link {
+  margin-right: 36px;
 }
 
-/* unvisited link */
-a:link {
+/* Unvisited Navigation links */
+a:link.nav-link {
   color: #6357ff;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* visited link */
-a:visited {
+/* visited Navigation link */
+a:visited.nav-link {
   color: #6357ff;
   text-decoration: none;
 }
 
-/* mouse over link */
-a:hover {
-  color: #fda085;
+/* mouse over Navigation link */
+a:hover.nav-link {
+  color: #ff5f33;
 }
 
-/* selected link */
-a:active {
-  color: blue;
+/* selected Navigation link */
+a.active-link {
+  color: #6357ff;
+  border-bottom: #fda085 4px solid;
+  padding-bottom: 8px;
 }
 
-svg {
-  /* Place the icon on the text baseline. */
-  position: relative;
-  top: 0.125em;
+/* Article title links */
+a.articleTitleLink {
+  color: inherit;
+  text-decoration: none;
+}
 
-  /* Prevent the icon from shrinking inside a flex container. */
-  flex-shrink: 0;
+a:visited.articleTitleLink {
+  color: inherit;
+  text-decoration: none;
+}
 
-  /* Scale the icon to match the font-size. */
-
-  width: 1em;
-
-  /* Let the icon take whatever color the parent has. */
-  fill: currentColor;
-
-  /*
-     * If the icon is used on a link, which has a color transition,
-     * we can also transition the fill.
-    */
-  transition: fill 0.3s;
+a:hover.articleTitleLink {
+  color: #ff5f33;
 }
 
 /* H1 TITLE */
 
-#title {
+.main-page-title {
   grid-column-start: 2;
   grid-row-start: 2;
 
-  margin-top: 3%;
-  margin-bottom: 5%;
-
   font-family: "Lato", sans-serif;
   font-weight: 900;
-  font-size: 3.85rem;
-  line-height: 125%;
+  font-size: 3.75rem;
+
+  margin-top: 24px;
 
   color: #232323;
 }
 
-/* SUBTITLE */
+/* SUBTITLE index page */
 
-#intro-sentence {
+.bio-intro-sentence {
   grid-column-start: 2;
   grid-row-start: 3;
 
@@ -100,26 +123,128 @@ svg {
   font-size: 2rem;
   line-height: 170%;
 
-  color: #232323;
-
   margin-top: -8px;
 
+  color: #232323;
+
   width: 100%;
+}
+
+.blog-page-list-title {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  color: #232323;
+  font-size: 2rem;
+  border-bottom: #232323 2px solid;
+  width: 9.29rem;
+}
+
+.blog-description-card {
+  grid-column-start: 2;
+  grid-row-start: inherit;
+
+  font-family: "Lato", sans-serif;
+
+  color: #232323;
+}
+
+.article-title {
+  font-size: 1.5rem;
+  color: #0a09a2;
+  font-weight: bold;
+  line-height: 140%;
+  margin: 0;
+}
+
+.background-title-square {
+  position: absolute;
+  background-color: #ffff00;
+  transform: rotate(17deg);
+  margin-bottom: -48px;
+  margin-left: -64px;
+  height: 56px;
+  width: 88px;
+  z-index: -1;
+  padding-left: 8px;
+}
+
+.tag-label-1 {
+  background-color: rgba(253, 160, 133, 0.5);
+  width: 8rem;
+  border-radius: 16%;
+  padding: 8px;
+}
+
+.tag-label-2 {
+  background-color: rgba(255, 255, 0, 0.5);
+  width: 8rem;
+  border-radius: 16%;
+  padding: 8px;
+}
+
+.tag-label-3 {
+  background-color: rgba(99, 87, 255, 0.5);
+  width: 8rem;
+  border-radius: 16%;
+  padding: 8px;
+}
+
+.read-time {
+  margin: 0;
+  text-decoration-style: wavy;
+  font-style: italic;
+}
+
+.article-description {
+  font-size: 1.15rem;
+  line-height: 140%;
+  margin: 0;
+  padding-top: 4px;
+  padding-bottom: 8px;
+}
+
+.publish-date {
+  color: #4e687a;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.topic-tag {
+  color: #232323;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  word-spacing: 8px;
+}
+
+.published-platform {
+  padding-top: 8px;
+  margin: 0;
+  color: #4e687a;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding-bottom: 64px;
 }
 
 /* Text highlight colour */
 mark {
   background-image: linear-gradient(180deg, #ffff00 92%, #fda085 8%);
-  color: 232323;
+  color: #232323;
 }
 
-#bio-paragraph {
+.bio-paragraph {
   grid-column-start: 2;
   grid-row-start: 4;
 
   font-family: "Lato", sans-serif;
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.28rem;
   line-height: 170%;
 
   color: #232323;
@@ -129,21 +254,36 @@ mark {
 
 /* Footer / Social */
 
-#footer {
+a.socialLinks {
+  color: #0a09a2;
+  text-decoration: none;
+}
+
+a:visited.socialLinks {
+  color: #0a09a2;
+  text-decoration: none;
+}
+
+a:hover.socialLinks {
+  color: #0a09a2;
+
+  text-decoration: none;
+}
+
+.footer {
   grid-column-start: 2;
-  grid-row-start: 5;
+  grid-row-start: 6;
 
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 160%;
+  line-height: 80%;
+
+  margin-bottom: 1.5rem;
 
   color: #232323;
-
-  margin-top: 16px;
-  margin-bottom: 48px;
 }
 
 #social-section {
-  word-spacing: 24px;
+  word-spacing: 16px;
 }
