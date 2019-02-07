@@ -108,6 +108,8 @@ a:hover.articleTitleLink {
   font-size: 3.75rem;
 
   margin-top: 24px;
+  
+  text-rendering: optimizeLegibility;
 
   color: #232323;
 }
