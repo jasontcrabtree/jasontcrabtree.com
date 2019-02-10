@@ -4,214 +4,245 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!-- [if gt IE 8]><! -->
 <html class="no-js" lang="en">
-  <!-- <![endif] -->
+	<!-- <![endif] -->
 
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Jason's Homepage</title>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Jason's Homepage</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Social tracking that I wish I didn't need -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-130258605-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'UA-130258605-1');
+		</script>
+		<!-- Search engines and page descriptions -->
+		<meta
+			name="description"
+			content="Jason Crabtree's personal website. Come in, come in. Enjoy
+      your
+      stay! I'm a designer, customer experience operator and heavy twitter
+      user.
+      Check out my writing, resume, projects and questionable code."
+		/>
+		<meta name="copyright" content="Jason Crabtree 2019" />
+		<link rel="canonical" href="https://jasontcrabtree.com" />
+		<link rel="author" href="https://twitter.com/jasontcrabtree" />
 
-    <!-- Social tracking that I wish I didn't need -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-130258605-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-130258605-1");
-    </script>
+		<meta
+			property="og:image"
+			content="https://jasontcrabtree.com/assets/social-image.png"
+		/>
 
-    <!-- Search engines and page descriptions -->
-    <meta
-      name="description"
-      content="Jason Crabtree's personal website. Come in, come in. Enjoy your stay! I'm a designer, customer experience operator and heavy twitter user. Check out my writing, resume, projects and questionable code."
-    />
-    <meta name="copyright" content="Jason Crabtree 2019" />
-    <link rel="canonical" href="https://jasontcrabtree.com" />
-    <link rel="author" href="https://twitter.com/jasontcrabtree" />
+		<!-- Google / Search Engine Tags -->
+		<meta itemprop="name" content="Jason Crabtree Portfolio Website" />
+		<meta
+			itemprop="description"
+			content="Jason Crabtree's personal website. Come in, come in. Enjoy
+      your
+      stay! I'm a designer, customer experience operator and heavy twitter
+      user.
+      Check out my writing, resume, projects and questionable code."
+		/>
+		<meta
+			itemprop="image"
+			content="https://jasontcrabtree.com/assets/social-image.png"
+		/>
 
-    <meta
-      property="og:image"
-      content="https://jasontcrabtree.com/assets/social-image.png"
-    />
+		<!-- Facebook Meta Tags -->
+		<meta property="og:url" content="https://jasontcrabtree.com" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Jason Crabtree Portfolio Website" />
+		<meta
+			property="og:description"
+			content="Jason Crabtree's personal website. Come in, come in. Enjoy
+      your
+      stay! I'm a designer, customer experience operator and heavy twitter
+      user.
+      Check out my writing, resume, projects and questionable code."
+		/>
 
-    <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="Jason Crabtree Portfolio Website" />
-    <meta
-      itemprop="description"
-      content="Jason Crabtree's personal website. Come in, come in. Enjoy your stay! I'm a designer, customer experience operator and heavy twitter user. Check out my writing, resume, projects and questionable code."
-    />
-    <meta
-      itemprop="image"
-      content="https://jasontcrabtree.com/assets/social-image.png"
-    />
+		<meta
+			property="og:image"
+			content="https://jasontcrabtree.com/assets/social-image.png"
+		/>
 
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://jasontcrabtree.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Jason Crabtree Portfolio Website" />
-    <meta
-      property="og:description"
-      content="Jason Crabtree's personal website. Come in, come in. Enjoy your stay! I'm a designer, customer experience operator and heavy twitter user. Check out my writing, resume, projects and questionable code."
-    />
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary" />
 
-    <meta
-      property="og:image"
-      content="https://jasontcrabtree.com/assets/social-image.png"
-    />
+		<meta name="twitter:title" content="Jason Crabtree Portfolio Website" />
+		<meta
+			name="twitter:description"
+			content="Kia ora! Hello. Come in, enjoy your stay! I'm a designer,
+      customer experience operator and heavy twitter user. Check out my
+      writing,
+      resume, projects and questionable code."
+		/>
+		<meta
+			name="twitter:image"
+			content="http://jasontcrabtree.com/assets/social-image.png"
+		/>
 
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@jasontcrabtree" />
+		<meta name="twitter:creator" content="@jasontcrabtree" />
+		<meta property="og:site_name" content="Jason Crabtree's Portfolio" />
+		<meta property="og:url" content="https://jasontcrabtree.com" />
 
-    <meta name="twitter:title" content="Jason Crabtree Portfolio Website" />
-    <meta
-      name="twitter:description"
-      content="Kia ora! Hello. Come in, enjoy your stay! I'm a designer, customer experience operator and heavy twitter user. Check out my writing, resume, projects and questionable code."
-    />
-    <meta
-      name="twitter:image"
-      content="http://jasontcrabtree.com/assets/social-image.png"
-    />
+		<!-- Vanilla CSS Styling using CSS Grid -->
+		<link rel="stylesheet" href="style.css" />
 
-    <meta name="twitter:site" content="@jasontcrabtree" />
-    <meta name="twitter:creator" content="@jasontcrabtree" />
-    <meta property="og:site_name" content="Jason Crabtree's Portfolio" />
-    <meta property="og:url" content="https://jasontcrabtree.com" />
+		<!-- Favicon stuff (generated at favicon generator -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="favicon_package/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="favicon_package/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="favicon_package/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#6357ff" />
+		<meta name="msapplication-TileColor" content="#00aba9" />
+		<meta name="theme-color" content="#ffffff" />
+	</head>
 
-    <!-- Vanilla CSS Styling using CSS Grid -->
-    <link rel="stylesheet" href="style.css" />
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="#">upgrade your browser</a> to improve your experience.
+			</p>
+		<![endif]-->
+		<div class="background-grid">
+			<div id="column-1-style"></div>
 
-    <!-- Favicon stuff (generated at favicon generator -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon_package/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon_package/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon_package/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#6357ff" />
-    <meta name="msapplication-TileColor" content="#00aba9" />
-    <meta name="theme-color" content="#ffffff" />
-  </head>
+			<nav id="header-section">
+				<a class="active-link nav-link" href="https://jasontcrabtree.com/"
+					>Home</a
+				>
+				<a href="https://jasontcrabtree.com/resume.pdf" class="nav-link"
+					>Resume</a
+				>
+				<!-- <a href="https://medium.com/@jasontcrabtree" class="nav-link">Case-Studies</a> -->
+				<a href="https://jasontcrabtree.com/blog" class="nav-link">Blog</a>
+				<a href="https://jasontcrabtree.com/projects" class="nav-link"
+					>Projects</a
+				>
+			</nav>
 
-  <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
-    <div class="background-grid">
-      <div id="column-1-style"></div>
+			<h1 class="main-page-title">Kia ora, I'm Jason Crabtree.</h1>
 
-      <nav id="header-section">
-        <a class="active-link nav-link" href="https://jasontcrabtree.com/"
-          >Home</a
-        >
-        <a href="https://jasontcrabtree.com/resume.pdf" class="nav-link"
-          >Resume</a
-        >
-        <!-- <a href="https://medium.com/@jasontcrabtree" class="nav-link">Case-Studies</a> -->
-        <a href="https://jasontcrabtree.com/blog" class="nav-link">Blog</a>
-        <!-- <a href="https://medium.com/@jasontcrabtree" class="nav-link">Projects</a> -->
-      </nav>
+			<h2 class="bio-intro-sentence">
+				I solve problems for people and businesses. I do that
+				<mark>thoughtfully, creatively and pragmatically.</mark>
+			</h2>
 
-      <h1 class="main-page-title">Kia Ora, I'm Jason Crabtree.</h1>
+			<section class="bio-paragraph">
+				<p>
+					Recently I've spent my days working in Customer Experience Design
+					focused on cross-channel service design. At night, I’m learning to
+					digital product design.
+				</p>
+				<p>
+					After five years working for New Zealand’s largest insurance company,
+					I’ve changed industries and continents. On January 29, 2019 I packed
+					my life into a suitcase and moved to Dublin, Ireland.
+				</p>
+				<p>
+					I'm now on the hunt for new opportunities. My focus is working with a
+					business-business software (SaaS) company
+					<strong
+						>solving meaningful problems for people and businesses.</strong
+					>
+					I believe helping people at work is a huge leverage point for helping
+					to improve people's lives.
+				</p>
 
-      <h2 class="bio-intro-sentence">
-        I solve problems for people and businesses. I do that
-        <mark>thoughtfully, creatively and pragmatically.</mark>
-      </h2>
+				<p>
+					I’m a team player, empathetic and good under pressure. I get stuff
+					done and I’m a quick learner with knowledge in lots of different
+					areas. I’d love to learn more about how we can work together — and how
+					I can help you and your business.
+				</p>
+				<p>
+					Want to chat?
+					<a
+						href="mailto:jasontcrabtree@gmail.com?Subject=Kia%20Ora,%20Hello!"
+						target="_top"
+						alt="jasontcrabtree@gmail.com"
+						id="email"
+						class="nav-link"
+						>Send an email! 👊 📨</a
+					>
+				</p>
+			</section>
 
-      <section class="bio-paragraph">
-        <p>
-          Recently I've spent my days working in Customer Experience Design
-          focused on cross-channel service design. At night, I’m learning to
-          digital product design.
-        </p>
-        <p>
-          After five years working for New Zealand’s largest insurance company,
-          I’ve changed industries and continents. On January 29, 2019 I packed
-          my life into a suitcase and moved to Dublin, Ireland.
-        </p>
-        <p>
-          I'm now on the hunt for new opportunities. My focus is working with a
-          business-business software (SaaS) company
-          <strong
-            >solving meaningful problems for people and businesses.</strong
-          >
-          I believe helping people at work is a huge leverage point for helping
-          to improve people's lives.
-        </p>
+			<article class="footer" class="webLinks">
+				<p class="footer-style">Around the web</p>
 
-        <p>
-          I’m a team player, empathetic and good under pressure. I get stuff
-          done and I’m a quick learner with knowledge in lots of different
-          areas. I’d love to learn more about how we can work together — and how
-          I can help you and your business.
-        </p>
-        <p>
-          Want to chat?
-          <a
-            href="mailto:jasontcrabtree@gmail.com?Subject=Kia%20Ora,%20Hello!"
-            target="_top"
-            alt="jasontcrabtree@gmail.com"
-            id="email"
-            class="nav-link"
-            >Send an email! 👊 📨</a
-          >
-        </p>
-      </section>
+				<div id="social-section">
+					<a href="https://twitter.com/jasontcrabtree" class="socialLinks">
+						<img
+							src="/assets/TwitterLogo.svg"
+							alt="Twitter logo"
+							class="socialIcons"
+						/>
+					</a>
+					<a href="https://medium.com/@jasontcrabtree" class="socialLinks"
+						><img
+							src="/assets/Monogram.svg"
+							alt="Medium logo"
+							class="socialIcons"
+						/>
+					</a>
+					<a href="https://github.com/jasontcrabtree" class="socialLinks"
+						><img
+							src="/assets/GitHubLogo.svg"
+							alt="GitHub logo"
+							class="socialIcons"
+						/>
+					</a>
+					<a
+						href="https://www.linkedin.com/in/jasontcrabtree/"
+						class="socialLinks"
+						><img
+							src="/assets/LinkedIn.svg"
+							alt="LinkedIn logo"
+							class="socialIcons"
+						/>
+					</a>
+				</div>
 
-      <article class="footer" class="webLinks">
-        <p class="footer-style">Around the web</p>
+				<footer>
+					<p>
+						©
+						<script type="text/javascript">
+							document.write(new Date().getFullYear());
+						</script>
+						Jason Crabtree
+					</p>
+				</footer>
+			</article>
+		</div>
 
-        <div id="social-section">
-          <a href="https://twitter.com/jasontcrabtree" class="socialLinks">
-            <img
-              src="/assets/TwitterLogo.svg"
-              alt="Twitter logo"
-              class="socialIcons"
-            />
-          </a>
-          <a href="https://medium.com/@jasontcrabtree" class="socialLinks"
-            ><img
-              src="/assets/Monogram.svg"
-              alt="Medium logo"
-              class="socialIcons"
-            />
-          </a>
-        </div>
-
-        <footer>
-          <p>
-            ©
-            <script type="text/javascript">
-              document.write(new Date().getFullYear());
-            </script>
-            Jason Crabtree
-          </p>
-        </footer>
-      </article>
-    </div>
-
-    <script src="" async defer></script>
-  </body>
+		<script src="" async defer></script>
+	</body>
 </html>
