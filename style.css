@@ -136,7 +136,7 @@ a:hover.articleTitleLink {
 
 .article-title {
 	font-size: 1.8rem;
-	color: #0a09a2;
+	color: #232323;
 	/* line-height: 1.4; */
 	margin: 0;
 	padding-bottom: 16px;
@@ -179,7 +179,7 @@ a:hover.projectLink {
 }
 
 .tag-label-1 {
-	background-color: #fffea9;
+	background-color: #85f8f8;
 	width: 8rem;
 	border-radius: 16%;
 	padding: 8px 12px 8px 12px;
@@ -187,7 +187,7 @@ a:hover.projectLink {
 }
 
 .tag-label-2 {
-	background-color: #aeaefa;
+	background-color: #a1cdf9;
 	width: 8rem;
 	border-radius: 16%;
 	padding: 8px 12px 8px 12px;
@@ -195,7 +195,7 @@ a:hover.projectLink {
 }
 
 .tag-label-3 {
-	background-color: #f8d1c4;
+	background-color: #f88a8a;
 	width: 8rem;
 	border-radius: 16%;
 	padding: 8px 12px 8px 12px;
@@ -203,7 +203,15 @@ a:hover.projectLink {
 }
 
 .tag-label-4 {
-	background-color: #a8d6d5;
+	background-color: #d1a8fa;
+	width: 8rem;
+	border-radius: 16%;
+	padding: 8px 12px 8px 12px;
+	margin-right: 8px;
+}
+
+.tag-label-4-PROJECTS {
+	background-color: #d1a8fa;
 	width: 8rem;
 	border-radius: 16%;
 	padding: 8px 12px 8px 12px;
